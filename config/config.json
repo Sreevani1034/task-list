@@ -1,23 +1,18 @@
 {
   "development": {
     "username": "manasa",
-    "password": null,
+    "password": "vani@123",
     "database": "tasks",
     "host": "127.0.0.1",
-    "dialect": "postgres"
-  },
-  "test": {
-    "username": "root",
-    "password": null,
-    "database": "database_test",
-    "host": "127.0.0.1",
+    "port": 5432,
     "dialect": "postgres"
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
+    "username": "postgres",
+    "password": "HHVnwAsL4JMLuj8",
+    "database": "postgres",
+    "host": "task-list.c54eocg4gwgi.eu-north-1.rds.amazonaws.com",
+    "port": 5432,
     "dialect": "postgres"
   }
 }

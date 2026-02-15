@@ -1,9 +1,9 @@
-const { order } = require("../../models"); 
+const { Task } = require("../../models"); 
 
 const getTaskService = async () => {
   try {
-    const orders = await order.findAll();
-    return orders;
+    const tasks = await Task.findAll();
+    return tasks;
   } catch (error :any) {
     throw new Error("Error fetching orders: " + error.message);
   }

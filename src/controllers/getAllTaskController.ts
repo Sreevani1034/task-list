@@ -1,9 +1,9 @@
-const { getAllOrdersService } = require("../services/orderServices");
+const { getTaskService } = require("../services/getTaskService");
 import { Response,Request } from 'express';
 
-const getAllOrdersController = async (req:Request, res:Response) => {
+const getAllTaskController = async (req:Request, res:Response) => {
   try {
-    const orders = await getAllOrdersService();
+    const orders = await getTaskService();
     res.status(200).json({
       success: true,
       data: orders,
@@ -17,4 +17,4 @@ const getAllOrdersController = async (req:Request, res:Response) => {
   }
 };
 
-module.exports = { getAllOrdersController };
+module.exports = { getAllTaskController };
